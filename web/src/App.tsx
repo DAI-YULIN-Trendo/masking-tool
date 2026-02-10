@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { DropZone } from './components/DropZone';
 import { PdfCanvas } from './components/PdfCanvas';
-import { Eraser, Move, Undo, Redo, Trash2, ArrowLeft, ArrowRight, Save, Square, Layers, HelpCircle, X, Globe } from 'lucide-react';
+import { Eraser, Move, Undo, Redo, Trash2, ArrowLeft, ArrowRight, Save, Square, Layers, HelpCircle, X } from 'lucide-react';
 import { save } from '@tauri-apps/plugin-dialog';
 import { writeFile } from '@tauri-apps/plugin-fs';
 import { translations, Language } from './locales';
