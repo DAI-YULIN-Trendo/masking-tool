@@ -7,6 +7,12 @@ import { save } from '@tauri-apps/plugin-dialog';
 import { writeFile } from '@tauri-apps/plugin-fs';
 import { translations, Language } from './locales';
 
+// Initialize PDF.js Worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.js',
+    import.meta.url
+).toString();
+
 // Interface matching Rust
 interface MaskRect {
     page: number;
