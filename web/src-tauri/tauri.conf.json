@@ -1,0 +1,55 @@
+{
+    "$schema": "https://schema.tauri.app/config/2",
+    "productName": "pd-secure-masking",
+    "version": "0.1.0",
+    "identifier": "com.trendo.masking",
+    "build": {
+        "beforeDevCommand": "npm run dev",
+        "beforeBuildCommand": "npm run build",
+        "devUrl": "http://localhost:5766",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "PDF セキュア墨消しツール",
+                "width": 1200,
+                "height": 900
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ],
+        "windows": {
+            "nsis": {
+                "languages": [
+                    "Japanese"
+                ],
+                "installerIcon": "icons/icon.ico"
+            }
+        },
+        "macOS": {
+            "dmg": {
+                "windowSize": {
+                    "width": 600,
+                    "height": 400
+                },
+                "appPosition": {
+                    "x": 150,
+                    "y": 150
+                }
+            }
+        }
+    }
+}

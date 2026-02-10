@@ -1,0 +1,1 @@
+{"main-capability":{"identifier":"main-capability","description":"Capability for the main window","local":true,"windows":["main"],"permissions":["fs:default","fs:allow-home-write-recursive","fs:allow-desktop-write-recursive","fs:allow-download-write-recursive","fs:allow-document-write-recursive","dialog:default","core:default"]}}

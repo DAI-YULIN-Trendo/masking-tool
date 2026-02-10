@@ -1,0 +1,19 @@
+# General
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Node
+node_modules/
+dist/
+.env
+.env.*
+
+# Rust
+/target
+**/target
+**/*.rs.bk
+
+# Tauri
+src-tauri/target/
