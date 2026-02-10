@@ -1,0 +1,6 @@
+target/
+node_modules/
+.DS_Store
+dist/
+wasm/pkg/
+web/src-tauri/target/
