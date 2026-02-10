@@ -17,3 +17,4 @@ dist/
 
 # Tauri
 src-tauri/target/
+docs/
